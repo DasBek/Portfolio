@@ -1,0 +1,241 @@
+body{
+   font-family: "Inter", sans-serif;
+   background-image: url('../images/bg.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: #f0f0f0;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.container{
+   background: #bbf2eb;
+   border-radius: 30px;
+   box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.6);
+   padding: 20px;
+   width: 800px;
+   min-height: 500px;
+   max-width: 100%;
+   max-height: 100%;
+   margin: 20px;
+   text-align: left;
+   border: 1px solid #ccc;
+   transition: transform 0.2s, box-shadow 0.2s;
+   background: linear-gradient(260deg, #b4ecde 0%, rgba(235, 235, 235, 0.00) 100%);
+   opacity: 3;
+}
+
+.container:hover{
+   transform: translateY(-5px);
+   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+   font-family: "Inter", sans-serif;
+   color: #fff; 
+   margin: 20px 0;
+   font-size: 40px;
+   text-transform: uppercase;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+h1 img{
+   margin-right: 10px;
+   width: 50px;
+   height: 50px;
+}
+
+h4{
+   font-family: "Inter", sans-serif;
+   color: #454747;
+   margin-bottom: 20px;
+   font-size: 1.3em;
+   text-align: center;
+   transition: color 0.3s;
+}
+
+h4:hover{
+   color: #fff;
+}
+
+ul{
+   list-style-type: none;
+   padding: 0;
+   margin-bottom: 20px;
+}
+
+li{
+   margin-bottom: 15px;
+   text-align: left;
+   background: #f9f9f9;
+   padding: 15px;
+   border-radius: 10px;
+   transition: transform 0.3s, background 0.3s;
+}
+
+li:hover{
+   transform: scale(1.05);
+   background: #ececec;
+}
+
+a{
+   text-decoration: none;
+   color: #06192e;
+   font-weight: bold;
+   font-size: 1.1em;
+}
+
+a:hover{
+   text-decoration: underline;
+}
+
+.description p{
+   font-size: 0.9em;
+   color: #454747;
+   margin-top: 10px;
+   color: #fff;
+}
+
+.tabs{
+   display: flex;
+   flex-wrap: nowrap;
+   overflow-x: auto;
+   margin: 20px 0;
+}
+
+.tab{
+   font-family: "Inter", sans-serif;
+   flex: 0 0 auto;
+   cursor: pointer;
+   padding: 10px 20px;
+   margin: 0 5px;
+   border: 1px solid #010304;
+   border-radius: 5px;
+   background-color: #fff;
+   color: #454747;
+   font-weight: bold;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+.tab:hover{
+   background-color: #12376e;
+   color: #fff;
+}
+
+.tab.active{
+   background-color: #406ddf;
+   color: #fff;
+}
+
+.tab-content{
+   display: none;
+}
+
+.tab-content.active{
+   display: block;
+}
+
+.btn{
+   width: 150px;
+   height: 30px;
+   background: linear-gradient(to top, #406ddf, #12376e, #23487f);
+   color: #fff;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+   margin-bottom: 5px;
+}
+
+.btn span{
+   font-size: 12px;
+   font-weight: 800;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   transition: top 0.5s;
+}
+
+.btn-text-one{
+   position: absolute;
+   width: 100%;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+}
+
+.btn-text-two{
+   position: absolute;
+   width: 100%;
+   top: 150%;
+   left: 0;
+   transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one{
+   top: -100%;
+}
+
+.btn:hover .btn-text-two{
+   top: 50%;
+}
+
+.link-button-container{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+@media (max-width: 768px){
+   body{
+       padding: 10px;
+   }
+
+   .container{
+       padding: 15px;
+       margin: 10px;
+   }
+
+   h1{
+       font-size: 1.5em;
+   }
+
+   h4{
+       font-size: 1.1em;
+   }
+
+   li{
+       padding: 10px;
+   }
+
+   .description{
+       font-size: 0.8em;
+   }
+}
+
+@media (max-width: 480px){
+   h1{
+       font-size: 1.2em;
+   }
+
+   h4{
+       font-size: 1em;
+   }
+
+   li{
+       padding: 8px;
+   }
+
+   .description{
+       font-size: 0.7em;
+   }
+}
